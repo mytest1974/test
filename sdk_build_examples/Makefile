@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named delete_item
-
-# Build rule for target.
-delete_item: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 delete_item
-.PHONY : delete_item
-
-# fast build rule for target.
-delete_item/fast:
-	$(MAKE) -f CMakeFiles/delete_item.dir/build.make CMakeFiles/delete_item.dir/build
-.PHONY : delete_item/fast
-
-#=============================================================================
 # Target rules for targets named create_table_composite_key
 
 # Build rule for target.
@@ -176,6 +163,19 @@ list_tables/fast:
 .PHONY : list_tables/fast
 
 #=============================================================================
+# Target rules for targets named delete_item
+
+# Build rule for target.
+delete_item: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 delete_item
+.PHONY : delete_item
+
+# fast build rule for target.
+delete_item/fast:
+	$(MAKE) -f CMakeFiles/delete_item.dir/build.make CMakeFiles/delete_item.dir/build
+.PHONY : delete_item/fast
+
+#=============================================================================
 # Target rules for targets named describe_table
 
 # Build rule for target.
@@ -226,6 +226,19 @@ put_item: cmake_check_build_system
 put_item/fast:
 	$(MAKE) -f CMakeFiles/put_item.dir/build.make CMakeFiles/put_item.dir/build
 .PHONY : put_item/fast
+
+#=============================================================================
+# Target rules for targets named hello
+
+# Build rule for target.
+hello: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hello
+.PHONY : hello
+
+# fast build rule for target.
+hello/fast:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
+.PHONY : hello/fast
 
 #=============================================================================
 # Target rules for targets named update_item
@@ -402,6 +415,33 @@ get_item.cpp.s:
 	$(MAKE) -f CMakeFiles/get_item.dir/build.make CMakeFiles/get_item.dir/get_item.cpp.s
 .PHONY : get_item.cpp.s
 
+hello.o: hello.cpp.o
+
+.PHONY : hello.o
+
+# target to build an object file
+hello.cpp.o:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.o
+.PHONY : hello.cpp.o
+
+hello.i: hello.cpp.i
+
+.PHONY : hello.i
+
+# target to preprocess a source file
+hello.cpp.i:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.i
+.PHONY : hello.cpp.i
+
+hello.s: hello.cpp.s
+
+.PHONY : hello.s
+
+# target to generate assembly for a file
+hello.cpp.s:
+	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.s
+.PHONY : hello.cpp.s
+
 list_tables.o: list_tables.cpp.o
 
 .PHONY : list_tables.o
@@ -517,16 +557,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... delete_item"
 	@echo "... create_table_composite_key"
 	@echo "... create_table"
 	@echo "... update_table"
 	@echo "... list_tables"
+	@echo "... delete_item"
 	@echo "... describe_table"
 	@echo "... get_item"
 	@echo "... delete_table"
 	@echo "... put_item"
 	@echo "... rebuild_cache"
+	@echo "... hello"
 	@echo "... update_item"
 	@echo "... create_table.o"
 	@echo "... create_table.i"
@@ -546,6 +587,9 @@ help:
 	@echo "... get_item.o"
 	@echo "... get_item.i"
 	@echo "... get_item.s"
+	@echo "... hello.o"
+	@echo "... hello.i"
+	@echo "... hello.s"
 	@echo "... list_tables.o"
 	@echo "... list_tables.i"
 	@echo "... list_tables.s"

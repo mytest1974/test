@@ -1,12 +1,13 @@
 /source/sdk_build_examples/CMakeFiles/edit_cache.dir
-/source/sdk_build_examples/CMakeFiles/delete_item.dir
 /source/sdk_build_examples/CMakeFiles/create_table_composite_key.dir
 /source/sdk_build_examples/CMakeFiles/create_table.dir
 /source/sdk_build_examples/CMakeFiles/update_table.dir
 /source/sdk_build_examples/CMakeFiles/list_tables.dir
+/source/sdk_build_examples/CMakeFiles/delete_item.dir
 /source/sdk_build_examples/CMakeFiles/describe_table.dir
 /source/sdk_build_examples/CMakeFiles/get_item.dir
 /source/sdk_build_examples/CMakeFiles/delete_table.dir
 /source/sdk_build_examples/CMakeFiles/put_item.dir
 /source/sdk_build_examples/CMakeFiles/rebuild_cache.dir
+/source/sdk_build_examples/CMakeFiles/hello.dir
 /source/sdk_build_examples/CMakeFiles/update_item.dir
