@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-7/root/usr/bin/c++ -fPIC   -shared -Wl,-soname,libaws-cpp-sdk-core.so -o libaws-cpp-sdk-core.so @CMakeFiles/aws-cpp-sdk-core.dir/objects1.rsp -lpthread -lcurl -lssl -lcrypto -lz 

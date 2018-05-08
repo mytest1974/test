@@ -1,0 +1,1 @@
+-I/source/aws-sdk-cpp-master/aws-cpp-sdk-access-management/include -I/source/aws-sdk-cpp-master/aws-cpp-sdk-cognito-identity/include -I/source/aws-sdk-cpp-master/aws-cpp-sdk-core/include -I/source/aws-sdk-cpp-master/aws-cpp-sdk-iam/include -I/source/aws-sdk-cpp-master/testing-resources/include 

@@ -1,0 +1,443 @@
+# Install script for directory: /source/aws-sdk-cpp-master/aws-cpp-sdk-ssm
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
+endif()
+string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
+
+# Set the install configuration name.
+if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
+  if(BUILD_TYPE)
+    string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
+           CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
+  else()
+    set(CMAKE_INSTALL_CONFIG_NAME "")
+  endif()
+  message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
+endif()
+
+# Set the component getting installed.
+if(NOT CMAKE_INSTALL_COMPONENT)
+  if(COMPONENT)
+    message(STATUS "Install component: \"${COMPONENT}\"")
+    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")
+  else()
+    set(CMAKE_INSTALL_COMPONENT)
+  endif()
+endif()
+
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
+endif()
+
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libaws-cpp-sdk-ssm.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libaws-cpp-sdk-ssm.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libaws-cpp-sdk-ssm.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/source/sdk_build/aws-cpp-sdk-ssm/libaws-cpp-sdk-ssm.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libaws-cpp-sdk-ssm.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libaws-cpp-sdk-ssm.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libaws-cpp-sdk-ssm.so"
+         OLD_RPATH "/source/sdk_build/aws-cpp-sdk-core:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/opt/rh/devtoolset-7/root/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libaws-cpp-sdk-ssm.so")
+    endif()
+  endif()
+endif()
+
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/pkgconfig" TYPE FILE FILES "/source/sdk_build/aws-cpp-sdk-ssm/aws-cpp-sdk-ssm.pc")
+endif()
+
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/aws/ssm" TYPE FILE FILES
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/SSMClient.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/SSMEndpoint.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/SSMErrorMarshaller.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/SSMErrors.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/SSMRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/SSM_EXPORTS.h"
+    )
+endif()
+
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/aws/ssm/model" TYPE FILE FILES
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/Activation.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/AddTagsToResourceRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/AddTagsToResourceResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/Association.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/AssociationDescription.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/AssociationFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/AssociationFilterKey.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/AssociationOverview.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/AssociationStatus.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/AssociationStatusName.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/AssociationVersionInfo.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/AutomationExecution.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/AutomationExecutionFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/AutomationExecutionFilterKey.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/AutomationExecutionMetadata.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/AutomationExecutionStatus.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CancelCommandRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CancelCommandResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/Command.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CommandFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CommandFilterKey.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CommandInvocation.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CommandInvocationStatus.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CommandPlugin.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CommandPluginStatus.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CommandStatus.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ComplianceExecutionSummary.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ComplianceItem.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ComplianceItemEntry.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ComplianceQueryOperatorType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ComplianceSeverity.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ComplianceStatus.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ComplianceStringFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ComplianceSummaryItem.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CompliantSummary.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreateActivationRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreateActivationResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreateAssociationBatchRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreateAssociationBatchRequestEntry.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreateAssociationBatchResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreateAssociationRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreateAssociationResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreateDocumentRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreateDocumentResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreateMaintenanceWindowRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreateMaintenanceWindowResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreatePatchBaselineRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreatePatchBaselineResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreateResourceDataSyncRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/CreateResourceDataSyncResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteActivationRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteActivationResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteAssociationRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteAssociationResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteDocumentRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteDocumentResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteInventoryRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteInventoryResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteMaintenanceWindowRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteMaintenanceWindowResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteParameterRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteParameterResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteParametersRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteParametersResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeletePatchBaselineRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeletePatchBaselineResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteResourceDataSyncRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeleteResourceDataSyncResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeregisterManagedInstanceRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeregisterManagedInstanceResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeregisterPatchBaselineForPatchGroupRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeregisterPatchBaselineForPatchGroupResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeregisterTargetFromMaintenanceWindowRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeregisterTargetFromMaintenanceWindowResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeregisterTaskFromMaintenanceWindowRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DeregisterTaskFromMaintenanceWindowResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeActivationsFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeActivationsFilterKeys.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeActivationsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeActivationsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeAssociationRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeAssociationResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeAutomationExecutionsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeAutomationExecutionsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeAutomationStepExecutionsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeAutomationStepExecutionsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeAvailablePatchesRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeAvailablePatchesResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeDocumentPermissionRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeDocumentPermissionResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeDocumentRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeDocumentResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeEffectiveInstanceAssociationsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeEffectiveInstanceAssociationsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeEffectivePatchesForPatchBaselineRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeEffectivePatchesForPatchBaselineResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeInstanceAssociationsStatusRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeInstanceAssociationsStatusResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeInstanceInformationRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeInstanceInformationResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeInstancePatchStatesForPatchGroupRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeInstancePatchStatesForPatchGroupResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeInstancePatchStatesRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeInstancePatchStatesResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeInstancePatchesRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeInstancePatchesResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeInventoryDeletionsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeInventoryDeletionsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeMaintenanceWindowExecutionTaskInvocationsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeMaintenanceWindowExecutionTaskInvocationsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeMaintenanceWindowExecutionTasksRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeMaintenanceWindowExecutionTasksResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeMaintenanceWindowExecutionsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeMaintenanceWindowExecutionsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeMaintenanceWindowTargetsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeMaintenanceWindowTargetsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeMaintenanceWindowTasksRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeMaintenanceWindowTasksResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeMaintenanceWindowsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeMaintenanceWindowsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeParametersRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribeParametersResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribePatchBaselinesRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribePatchBaselinesResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribePatchGroupStateRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribePatchGroupStateResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribePatchGroupsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DescribePatchGroupsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DocumentDefaultVersionDescription.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DocumentDescription.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DocumentFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DocumentFilterKey.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DocumentFormat.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DocumentHashType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DocumentIdentifier.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DocumentKeyValuesFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DocumentParameter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DocumentParameterType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DocumentPermissionType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DocumentStatus.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DocumentType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/DocumentVersionInfo.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/EffectivePatch.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ExecutionMode.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/FailedCreateAssociation.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/FailureDetails.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/Fault.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetAutomationExecutionRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetAutomationExecutionResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetCommandInvocationRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetCommandInvocationResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetDefaultPatchBaselineRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetDefaultPatchBaselineResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetDeployablePatchSnapshotForInstanceRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetDeployablePatchSnapshotForInstanceResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetDocumentRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetDocumentResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetInventoryRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetInventoryResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetInventorySchemaRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetInventorySchemaResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetMaintenanceWindowExecutionRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetMaintenanceWindowExecutionResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetMaintenanceWindowExecutionTaskInvocationRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetMaintenanceWindowExecutionTaskInvocationResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetMaintenanceWindowExecutionTaskRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetMaintenanceWindowExecutionTaskResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetMaintenanceWindowRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetMaintenanceWindowResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetMaintenanceWindowTaskRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetMaintenanceWindowTaskResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetParameterHistoryRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetParameterHistoryResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetParameterRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetParameterResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetParametersByPathRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetParametersByPathResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetParametersRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetParametersResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetPatchBaselineForPatchGroupRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetPatchBaselineForPatchGroupResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetPatchBaselineRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/GetPatchBaselineResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InstanceAggregatedAssociationOverview.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InstanceAssociation.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InstanceAssociationOutputLocation.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InstanceAssociationOutputUrl.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InstanceAssociationStatusInfo.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InstanceInformation.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InstanceInformationFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InstanceInformationFilterKey.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InstanceInformationStringFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InstancePatchState.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InstancePatchStateFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InstancePatchStateOperatorType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InventoryAggregator.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InventoryAttributeDataType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InventoryDeletionStatus.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InventoryDeletionStatusItem.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InventoryDeletionSummary.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InventoryDeletionSummaryItem.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InventoryFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InventoryItem.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InventoryItemAttribute.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InventoryItemSchema.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InventoryQueryOperatorType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InventoryResultEntity.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InventoryResultItem.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/InventorySchemaDeleteOption.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/LastResourceDataSyncStatus.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListAssociationVersionsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListAssociationVersionsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListAssociationsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListAssociationsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListCommandInvocationsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListCommandInvocationsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListCommandsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListCommandsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListComplianceItemsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListComplianceItemsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListComplianceSummariesRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListComplianceSummariesResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListDocumentVersionsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListDocumentVersionsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListDocumentsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListDocumentsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListInventoryEntriesRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListInventoryEntriesResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListResourceComplianceSummariesRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListResourceComplianceSummariesResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListResourceDataSyncRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListResourceDataSyncResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListTagsForResourceRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ListTagsForResourceResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/LoggingInfo.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowAutomationParameters.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowExecution.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowExecutionStatus.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowExecutionTaskIdentity.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowExecutionTaskInvocationIdentity.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowIdentity.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowLambdaParameters.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowResourceType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowRunCommandParameters.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowStepFunctionsParameters.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowTarget.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowTask.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowTaskInvocationParameters.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowTaskParameterValueExpression.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/MaintenanceWindowTaskType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ModifyDocumentPermissionRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ModifyDocumentPermissionResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/NonCompliantSummary.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/NotificationConfig.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/NotificationEvent.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/NotificationType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/OperatingSystem.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/Parameter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ParameterHistory.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ParameterMetadata.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ParameterStringFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ParameterType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ParametersFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ParametersFilterKey.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/Patch.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchBaselineIdentity.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchComplianceData.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchComplianceDataState.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchComplianceLevel.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchDeploymentStatus.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchFilterGroup.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchFilterKey.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchGroupPatchBaselineMapping.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchOperationType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchOrchestratorFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchRule.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchRuleGroup.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchSource.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PatchStatus.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PingStatus.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PlatformType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PutComplianceItemsRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PutComplianceItemsResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PutInventoryRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PutInventoryResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PutParameterRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/PutParameterResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/RegisterDefaultPatchBaselineRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/RegisterDefaultPatchBaselineResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/RegisterPatchBaselineForPatchGroupRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/RegisterPatchBaselineForPatchGroupResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/RegisterTargetWithMaintenanceWindowRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/RegisterTargetWithMaintenanceWindowResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/RegisterTaskWithMaintenanceWindowRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/RegisterTaskWithMaintenanceWindowResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/RemoveTagsFromResourceRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/RemoveTagsFromResourceResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ResolvedTargets.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ResourceComplianceSummaryItem.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ResourceDataSyncItem.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ResourceDataSyncS3Destination.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ResourceDataSyncS3Format.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ResourceType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ResourceTypeForTagging.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/ResultAttribute.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/S3OutputLocation.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/S3OutputUrl.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/SendAutomationSignalRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/SendAutomationSignalResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/SendCommandRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/SendCommandResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/SeveritySummary.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/SignalType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/StartAutomationExecutionRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/StartAutomationExecutionResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/StepExecution.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/StepExecutionFilter.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/StepExecutionFilterKey.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/StopAutomationExecutionRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/StopAutomationExecutionResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/StopType.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/Tag.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/Target.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateAssociationRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateAssociationResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateAssociationStatusRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateAssociationStatusResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateDocumentDefaultVersionRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateDocumentDefaultVersionResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateDocumentRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateDocumentResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateMaintenanceWindowRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateMaintenanceWindowResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateMaintenanceWindowTargetRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateMaintenanceWindowTargetResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateMaintenanceWindowTaskRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateMaintenanceWindowTaskResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateManagedInstanceRoleRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdateManagedInstanceRoleResult.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdatePatchBaselineRequest.h"
+    "/source/aws-sdk-cpp-master/aws-cpp-sdk-ssm/include/aws/ssm/model/UpdatePatchBaselineResult.h"
+    )
+endif()
+
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/cmake/aws-cpp-sdk-ssm/aws-cpp-sdk-ssm-targets.cmake")
+    file(DIFFERENT EXPORT_FILE_CHANGED FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/cmake/aws-cpp-sdk-ssm/aws-cpp-sdk-ssm-targets.cmake"
+         "/source/sdk_build/aws-cpp-sdk-ssm/CMakeFiles/Export/lib64/cmake/aws-cpp-sdk-ssm/aws-cpp-sdk-ssm-targets.cmake")
+    if(EXPORT_FILE_CHANGED)
+      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/cmake/aws-cpp-sdk-ssm/aws-cpp-sdk-ssm-targets-*.cmake")
+      if(OLD_CONFIG_FILES)
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/cmake/aws-cpp-sdk-ssm/aws-cpp-sdk-ssm-targets.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
+        file(REMOVE ${OLD_CONFIG_FILES})
+      endif()
+    endif()
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/cmake/aws-cpp-sdk-ssm" TYPE FILE FILES "/source/sdk_build/aws-cpp-sdk-ssm/CMakeFiles/Export/lib64/cmake/aws-cpp-sdk-ssm/aws-cpp-sdk-ssm-targets.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/cmake/aws-cpp-sdk-ssm" TYPE FILE FILES "/source/sdk_build/aws-cpp-sdk-ssm/CMakeFiles/Export/lib64/cmake/aws-cpp-sdk-ssm/aws-cpp-sdk-ssm-targets-noconfig.cmake")
+  endif()
+endif()
+
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Devel" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64/cmake/aws-cpp-sdk-ssm" TYPE FILE FILES
+    "/source/sdk_build/aws-cpp-sdk-ssm/aws-cpp-sdk-ssm-config.cmake"
+    "/source/sdk_build/aws-cpp-sdk-ssm/aws-cpp-sdk-ssm-config-version.cmake"
+    )
+endif()
+

@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-7/root/usr/bin/c++    -rdynamic @CMakeFiles/aws-cpp-sdk-core-tests.dir/objects1.rsp  -o aws-cpp-sdk-core-tests -Wl,-rpath,/source/sdk_build/testing-resources:/source/sdk_build/aws-cpp-sdk-core ../testing-resources/libtesting-resources.so ../aws-cpp-sdk-core/libaws-cpp-sdk-core.so -lpthread -lcurl -lssl -lcrypto -lz 

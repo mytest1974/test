@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: testing-resources
+Description: Testing utility library for the AWS C++ SDK
+Version: 1.4.43
+Cflags: -I${includedir} -fno-exceptions -std=c++11
+Libs: -L${libdir} -ltesting-resources 
+Libs.private: -lpthread -lcurl -lcrypto -lssl -lz
+Requires:  aws-cpp-sdk-core
