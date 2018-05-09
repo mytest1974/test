@@ -4,12 +4,10 @@
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-doc-sdk-examples/cpp/example_code/dynamodb/SignRequest.cpp
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/AmazonSerializableWebServiceRequest.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/AmazonWebServiceRequest.h
-CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/Aws.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/Core_EXPORTS.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/Region.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/SDKConfig.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/auth/AWSAuthSigner.h
-CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/http/HttpClientFactory.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/http/HttpRequest.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/http/HttpTypes.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/http/Scheme.h
@@ -18,9 +16,6 @@ CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/DateTime.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/Outcome.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/UnreferencedParam.h
-CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/crypto/Factories.h
-CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/logging/LogLevel.h
-CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/logging/LogSystemInterface.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/memory/AWSMemory.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/memory/MemorySystemInterface.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/memory/stl/AWSAllocator.h
@@ -30,11 +25,8 @@ CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/memory/stl/AWSSet.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/memory/stl/AWSStreamFwd.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/memory/stl/AWSString.h
-CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/memory/stl/AWSStringStream.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/memory/stl/AWSVector.h
-CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/memory/stl/SimpleStringStream.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/stream/ResponseStream.h
-CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/stream/SimpleStreamBuf.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-dynamodb/include/aws/dynamodb/DynamoDBRequest.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-dynamodb/include/aws/dynamodb/DynamoDB_EXPORTS.h
 CMakeFiles/SignRequest.dir/SignRequest.cpp.o: /source/aws-sdk-cpp-master/aws-cpp-sdk-dynamodb/include/aws/dynamodb/model/ListTablesRequest.h

@@ -7,8 +7,6 @@
 #IncludeRegexTransform: 
 
 /source/aws-doc-sdk-examples/cpp/example_code/dynamodb/SignRequest.cpp
-aws/core/Aws.h
--
 aws/core/utils/Outcome.h
 -
 aws/dynamodb/DynamoDBRequest.h
@@ -64,20 +62,6 @@ aws/core/utils/stream/ResponseStream.h
 aws/core/auth/AWSAuthSigner.h
 -
 
-/source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/Aws.h
-aws/core/utils/logging/LogLevel.h
--
-aws/core/utils/logging/LogSystemInterface.h
--
-aws/core/utils/memory/MemorySystemInterface.h
--
-aws/core/utils/crypto/Factories.h
--
-aws/core/http/HttpClientFactory.h
--
-aws/core/Core_EXPORTS.h
--
-
 /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/Core_EXPORTS.h
 aws/core/SDKConfig.h
 -
@@ -110,14 +94,6 @@ atomic
 mutex
 -
 chrono
--
-
-/source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/http/HttpClientFactory.h
-aws/core/Core_EXPORTS.h
--
-aws/core/http/HttpTypes.h
--
-aws/core/utils/memory/stl/AWSStreamFwd.h
 -
 
 /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/http/HttpRequest.h
@@ -201,28 +177,6 @@ utility
 -
 
 /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/UnreferencedParam.h
-
-/source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/crypto/Factories.h
-aws/core/Core_EXPORTS.h
--
-aws/core/utils/Array.h
--
-memory
--
-
-/source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/logging/LogLevel.h
-aws/core/Core_EXPORTS.h
--
-aws/core/utils/memory/stl/AWSString.h
--
-
-/source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/logging/LogSystemInterface.h
-aws/core/Core_EXPORTS.h
--
-aws/core/utils/memory/stl/AWSString.h
--
-aws/core/utils/memory/stl/AWSStringStream.h
--
 
 /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/memory/AWSMemory.h
 aws/core/Core_EXPORTS.h
@@ -314,16 +268,6 @@ functional
 string
 -
 
-/source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/memory/stl/AWSStringStream.h
-aws/core/Core_EXPORTS.h
--
-aws/core/utils/memory/stl/SimpleStringStream.h
--
-aws/core/utils/memory/stl/AWSAllocator.h
--
-sstream
--
-
 /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/memory/stl/AWSVector.h
 aws/core/Core_EXPORTS.h
 -
@@ -332,30 +276,12 @@ aws/core/utils/memory/stl/AWSAllocator.h
 vector
 -
 
-/source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/memory/stl/SimpleStringStream.h
-aws/core/Core_EXPORTS.h
--
-aws/core/utils/stream/SimpleStreamBuf.h
--
-iostream
--
-
 /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/stream/ResponseStream.h
 aws/core/Core_EXPORTS.h
 -
 aws/core/utils/memory/AWSMemory.h
 -
 aws/core/utils/memory/stl/AWSStreamFwd.h
--
-
-/source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/utils/stream/SimpleStreamBuf.h
-aws/core/Core_EXPORTS.h
--
-aws/core/utils/memory/stl/AWSString.h
--
-aws/core/utils/memory/stl/AWSVector.h
--
-streambuf
 -
 
 /source/aws-sdk-cpp-master/aws-cpp-sdk-dynamodb/include/aws/dynamodb/DynamoDBRequest.h
