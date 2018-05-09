@@ -6,12 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/source/aws-doc-sdk-examples/cpp/example_code/dynamodb/hello.cpp
+/source/aws-doc-sdk-examples/cpp/example_code/dynamodb/SignRequest.cpp
 aws/core/Aws.h
 -
 aws/core/utils/Outcome.h
--
-aws/dynamodb/MyDynamoDBClient.h
 -
 aws/dynamodb/DynamoDBRequest.h
 -
@@ -24,6 +22,8 @@ iostream
 string
 -
 curl/curl.h
+-
+ctime
 -
 
 /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/AmazonSerializableWebServiceRequest.h
@@ -365,8 +365,6 @@ aws/core/http/HttpRequest.h
 -
 
 /source/aws-sdk-cpp-master/aws-cpp-sdk-dynamodb/include/aws/dynamodb/DynamoDB_EXPORTS.h
-
-/source/aws-sdk-cpp-master/aws-cpp-sdk-dynamodb/include/aws/dynamodb/MyDynamoDBClient.h
 
 /source/aws-sdk-cpp-master/aws-cpp-sdk-dynamodb/include/aws/dynamodb/model/ListTablesRequest.h
 aws/dynamodb/DynamoDB_EXPORTS.h
