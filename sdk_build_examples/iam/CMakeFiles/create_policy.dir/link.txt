@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-7/root/usr/bin/c++    -rdynamic CMakeFiles/create_policy.dir/create_policy.cpp.o  -o create_policy -Wl,-rpath,/source/sdk_build/aws-cpp-sdk-iam:/source/sdk_build/aws-cpp-sdk-core /source/sdk_build/aws-cpp-sdk-iam/libaws-cpp-sdk-iam.so /source/sdk_build/aws-cpp-sdk-core/libaws-cpp-sdk-core.so -lpthread -lcurl -lssl -lcrypto -lz 

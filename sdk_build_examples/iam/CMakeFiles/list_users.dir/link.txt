@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-7/root/usr/bin/c++    -rdynamic CMakeFiles/list_users.dir/list_users.cpp.o  -o list_users -Wl,-rpath,/source/sdk_build/aws-cpp-sdk-iam:/source/sdk_build/aws-cpp-sdk-core /source/sdk_build/aws-cpp-sdk-iam/libaws-cpp-sdk-iam.so /source/sdk_build/aws-cpp-sdk-core/libaws-cpp-sdk-core.so -lpthread -lcurl -lssl -lcrypto -lz 

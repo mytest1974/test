@@ -1,0 +1,13 @@
+/source/sdk_build_examples/dynamodb/CMakeFiles/edit_cache.dir
+/source/sdk_build_examples/dynamodb/CMakeFiles/create_table_composite_key.dir
+/source/sdk_build_examples/dynamodb/CMakeFiles/create_table.dir
+/source/sdk_build_examples/dynamodb/CMakeFiles/update_table.dir
+/source/sdk_build_examples/dynamodb/CMakeFiles/list_tables.dir
+/source/sdk_build_examples/dynamodb/CMakeFiles/delete_item.dir
+/source/sdk_build_examples/dynamodb/CMakeFiles/describe_table.dir
+/source/sdk_build_examples/dynamodb/CMakeFiles/get_item.dir
+/source/sdk_build_examples/dynamodb/CMakeFiles/delete_table.dir
+/source/sdk_build_examples/dynamodb/CMakeFiles/put_item.dir
+/source/sdk_build_examples/dynamodb/CMakeFiles/rebuild_cache.dir
+/source/sdk_build_examples/dynamodb/CMakeFiles/hello.dir
+/source/sdk_build_examples/dynamodb/CMakeFiles/update_item.dir
