@@ -1,1 +1,0 @@
-/opt/rh/devtoolset-7/root/usr/bin/c++    -rdynamic CMakeFiles/describe_table.dir/describe_table.cpp.o  -o describe_table -Wl,-rpath,/source/sdk_build/aws-cpp-sdk-dynamodb:/source/sdk_build/aws-cpp-sdk-core /source/sdk_build/aws-cpp-sdk-dynamodb/libaws-cpp-sdk-dynamodb.so /source/sdk_build/aws-cpp-sdk-core/libaws-cpp-sdk-core.so -lpthread -lcurl -lssl -lcrypto -lz 

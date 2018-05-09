@@ -1,1 +1,0 @@
-/opt/rh/devtoolset-7/root/usr/bin/c++    -rdynamic CMakeFiles/list_tables.dir/list_tables.cpp.o  -o list_tables -Wl,-rpath,/source/sdk_build/aws-cpp-sdk-dynamodb:/source/sdk_build/aws-cpp-sdk-core /source/sdk_build/aws-cpp-sdk-dynamodb/libaws-cpp-sdk-dynamodb.so /source/sdk_build/aws-cpp-sdk-core/libaws-cpp-sdk-core.so -lpthread -lcurl -lssl -lcrypto -lz 
