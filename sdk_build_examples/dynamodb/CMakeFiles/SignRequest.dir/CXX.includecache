@@ -27,6 +27,8 @@ ctime
 -
 openssl/sha.h
 -
+openssl/hmac.h
+-
 
 /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/AmazonSerializableWebServiceRequest.h
 aws/core/Core_EXPORTS.h
