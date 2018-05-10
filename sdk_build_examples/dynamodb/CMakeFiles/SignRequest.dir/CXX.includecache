@@ -19,6 +19,8 @@ iostream
 -
 string
 -
+sstream
+-
 curl/curl.h
 -
 ctime
