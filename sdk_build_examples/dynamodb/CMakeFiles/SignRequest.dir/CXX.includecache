@@ -61,6 +61,8 @@ netinet/in.h
 -
 arpa/inet.h
 -
+curl/curl.h
+-
 
 /source/aws-sdk-cpp-master/aws-cpp-sdk-core/include/aws/core/AmazonSerializableWebServiceRequest.h
 aws/core/Core_EXPORTS.h
